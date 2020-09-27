@@ -1,0 +1,37 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+} 
+#add-instance{
+  margin: auto;
+  width: 100%;
+}
+#form{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.instance{
+  width: 100%;
+  list-style: none; 
+  margin: auto;
+  display: flex;
+  padding: 0px;
+  background-color: rgb(187, 203, 219);  
+}
+.instance:nth-child(odd){
+  background-color: lightsteelblue;
+}
+
+
+li{
+  padding:5px 15px;
+  margin: 3px 0px;
+  width: 11%;
+}

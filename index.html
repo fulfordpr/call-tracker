@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="add-instance">
+      <form id="form" action="">
+        <input type="number" id="customer-number" name="customerNumber" placeholder="Customer #" value="">
+        <input type="number" id="phone-number" name="phoneNumber" placeholder="Phone Number" value="">
+        <input type="time" name="time" id="time">
+        <input type="date" name="date" id="date">
+        <label for="log-status">LOGGED IN?</label>
+        <select name="log-status" id="log-status">
+          <option value="Y">Y</option>
+          <option value="N">N</option>
+        </select>
+        <label for="ready-status">READY?</label>
+        <select name="ready-status" id="ready-status">
+          <option value="Y">Y</option>
+          <option value="N">N</option>
+        </select>
+        <label for="ring-status">PHONE RING?</label>
+        <select name="ring-status" id="ring-status">
+          <option value="Y">Y</option>
+          <option value="N">N</option>
+        </select>
+        <label for="phone-status">ON THE PHONE?</label>
+        <select name="phone-status" id="phone-status">
+          <option value="Y">Y</option>
+          <option value="N">N</option>
+        </select>
+        <label for="vm-status">VM LEFT?</label>
+        <select name="vm-status" id="vm-status">
+          <option value="Y">Y</option>
+          <option value="N">N</option>
+        </select>
+        <input id="submit-instance" type="submit">
+      </form>
+    </div>
+    <div id="instance-list">
+      
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
