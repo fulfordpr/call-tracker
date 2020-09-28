@@ -70,30 +70,31 @@ function addInstance(e){
   time.value === ''||
   date.value === ''){
     alert('At least fill customer number, date, and time.');
+  } else {
+    //create instance object
+    const instance = {
+      Customer_Number : custNum.value, 
+      Phone_Number : phone.value,
+      Call_Time :time.value, 
+      Call_Date : date.value, 
+      Login_Status : logIn.value, 
+      Ready_Status : ready.value, 
+      Phone_Ring : ring.value, 
+      On_Call : currentCall.value, 
+      Received_VM : vm.value
+    };
+    //store in local storage
+    storeInLS(instance);
+
+
+
+  //set the keys and values into an Array with arrays [[x,y],[x,y]]
+    const properties = Object.entries(instance);
+  //output the keys and values into the document
+    addToDOM(properties);
+    console.log(properties);
+    e.preventDefault();
   }
-  //create instance object
-  const instance = {
-    Customer_Number : custNum.value, 
-    Phone_Number : phone.value,
-    Call_Time :time.value, 
-    Call_Date : date.value, 
-    Login_Status : logIn.value, 
-    Ready_Status : ready.value, 
-    Phone_Ring : ring.value, 
-    On_Call : currentCall.value, 
-    Received_VM : vm.value
-  };
-  //store in local storage
-  storeInLS(instance);
-
-
-
- //set the keys and values into an Array with arrays [[x,y],[x,y]]
-  const properties = Object.entries(instance);
- //output the keys and values into the document
-  addToDOM(properties);
-  console.log(properties);
-  e.preventDefault();
 }
 
 
